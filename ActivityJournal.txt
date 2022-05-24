@@ -1,0 +1,48 @@
+SWEN-250 Activity Reflection
+
+Name:Miguel Reyes
+
+================================================================
+Start
+Estimated Time	02:00
+Plan:
+(Order of implementation, testing approach, etc.)
+1)int find_ch_index(char string[], char ch):
+	Here I will use a while loop to iterate through
+	string and an index variale like i to check if string
+	at position i is equal to ch and if so return i.
+	If nothing found return -1.
+2)char *find_ch_ptr(char *string, char ch):
+	Here use a while loop that runs until string pointers
+	value is a terminating char. Use condition to 
+	check if pointers value is equal to ch if so return 
+	pointer at its current address. Else return null
+	pointer.
+3)int find_any_index(char string[], char stop[]):
+	Use nested loops. For every stop char compare one string
+	char and go down the array of string chars until a 
+	match is found and return string index, other wise return -1. 
+4) char *find_any_ptr(char *string, char* stop):
+	Same exact approach as find_any_index(char string[], char stop[]).
+	Except pointers.
+5) char *find_substr(char *string, char* substr):
+	Here I need to iterate through both pointers and check to see
+	each character is equal. The key thing is making sure to 
+	check if the very last char in substr is in string. 
+Complete
+Actual Time	03:00
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+	I honestly had to review more of the material from lecture
+	before starting the assignment - I think that is why it 
+	took me a lot longer. Also one thing I learned in particular
+	is that if a pointer is moving from one byte to another
+	you can keep track of it by setting a counter and 
+	deducting it from the pointer, like string - counter
+	and this returns the strings originally position.
+	This helped for the last function although implemented
+	a little differently because we didn't wants its original
+	position but the position of the first occurance of 
+	substr.
+
+================================================================
